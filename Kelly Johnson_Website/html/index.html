@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Kelly Johnson</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images/favicon1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <section class="navbar" id="navbar">
+      <div class="logo"><img src="../images/logo.png" width="110px"></div>
+      <nav class="nav-links">
+        <a  href="#welcome-tag" id="welcome-link" class="nav-links">Welcome</a>
+        <a href="#why-us-tag" class="nav-links">Why us?</a>
+
+          <div class="dropdown">
+            <a href="#ready-tag" id="shop" class="nav-links" >Shop</a>
+            <div class="dropdown-content">
+              <a href="#ready-tag">Ready to go collection</a>
+              <a href="#custom-orders-tag">Custom Orders</a>
+              <a href="#learn-tag">Learn with Shay</a>
+            </div>
+          </div>
+
+        <a href="#message-tag" id="message-link" class="nav-links">Contact us</a>
+      </nav>
+      <div class="search-container">
+        <form id="searchForm" action=" " method="GET">
+          <input
+            type="text"
+            name="search"
+            id="searchInput"
+            placeholder="Search"
+            autocomplete="off"
+          />
+          <button type="submit">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+              <path d="M21 21l-4.35-4.35" stroke="#423c09" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="10" cy="10" r="6" stroke="#423c09" stroke-width="2" fill="none"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+<!--------------- LANDING PAGE ------------------->
+
+  <section class="outer-header" id="welcome-tag"> 
+    <div class="header">  
+      <div class="header-text">
+
+        <h1>Hello there!</h1>
+              <p>Founded by Shay, a passionate maker dedicated to slowing down fashion, 
+                  we create crochet garments and accessories that are timeless, sustainable, 
+                  and lovingly handcrafted.
+              By choosing Croshay’s, you’re not only purchasing a garment — you’re 
+              supporting ethical craftsmanship and saying no to the waste of fast fashion. </p>
+              <button> View our collection </button>
+      </div>
+    </div>
+  </section>
+<!---------------- WHY US INFORMATION ------------------>
+
+<section class="why-section" id="why-us-tag">
+  <h1>Why Us?</h1>
+  <div class="owl-carousel custom-carousel owl-theme">
+    <div class="item active" style="background-image: url(../images/pillow.jpg);">
+      <div class="item-desc">
+        <p><img id="sub-containers-icons" src="../images/logo-icon.png" width="50px"></p>
+        <p>Our pieces are designed for comfort and durability</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(../images/jumper_01.jpg);">
+      <div class="item-desc">
+        <p><img id="sub-containers-icons" src="../images/logo-icon.png" width="50px"></p>
+        <p>Our products are 100% handmade, so no mass production</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(../images/hands_02.jpg);">
+      <div class="item-desc">
+        <p><img id="sub-containers-icons" src="../images/logo-icon.png" width="50px"></p>
+        <p>We only use high quality yarns and materials</p>
+      </div>
+    </div>
+</section>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+
+
+<!---------------- CAROUSEL ------------------>
+
+    <section class="carousel-container" id="ready-tag">
+      <h1>Ready to go collection</h1>
+      <p>From snug beanies to elegant cardigans, explore pieces made with premium yarn and plenty of personality.</p>
+  
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="carousel-item" id="item1">
+            <div class="item1-text">
+              <h2>The Classy Cardigan</h2>
+              <button class="item-actions">More info</button>
+            </div>
+          </div>
+
+          <div class="carousel-item" id="item2">
+            <div class="item2-text">
+              <h2>The Handcrafted Hat</h2>
+              <button class="item-actions">More info</button>
+            </div>
+          </div>
+
+          <div class="carousel-item" id="item3">
+            <div class="item3-text">
+              <h2>The Bulky Blanket</h2>
+              <button class="item-actions">More info</button>
+            </div>
+          </div>
+
+          <div class="carousel-item" id="item4">
+            <div class="item4-text">
+              <h2>The Dearest Doll</h2>
+              <button class="item-actions">More info</button>
+            </div>
+          </div>
+
+          <div class="carousel-item" id="item5">
+            <div class="item5-text">
+              <h2>The Snug Sokkies</h2>
+              <button class="item-actions">More info</button>
+            </div>
+          </div>
+
+        </div> 
+      </div>
+      
+    </section>
+
+    <div class="carousel-buttons">
+      <button class="carousel-buttonlr" onclick="moveCarousel(-1)">&#9664;</button>
+      <button class="carousel-buttonlr" onclick="moveCarousel(1)">&#9654;</button>
+    </div>
+
+<!-------------- ACCORDIAN CUSTOM ORDERS -------------------->
+
+    <section class="accordion-container" id="ready-tag">
+      <h1 id="custom-orders-tag">Custom Orders</h1>
+      <h2>Your vision, Shay’s craftsmanship.</h2>
+    
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Send Your Idea</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="accordion-content">
+            Email or fill out our <em>Custom Order Form</em> with reference photos, size details, and preferred colours.
+          </div>
+        </div>
+    
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Confirm & Quote</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="accordion-content">
+            Shay will review your request, confirm feasibility, and send a price and estimated delivery date.
+          </div>
+        </div>
+    
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Timeframe</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="accordion-content">
+            Please place your order at least 2 weeks in advance of when you’d like to receive it. Larger or more detailed pieces may require up to 4 weeks.
+          </div>
+        </div>
+    
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Crafting & Delivery</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="accordion-content">
+            Your custom garment is handmade with attention to every detail, then shipped straight to your door.
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!--------------- LEARN WITH - VIDEO ------------------->
+
+    <section class="learn-with-shay" id="ready-tag">
+      <h1 id="learn-tag">Learn with Shay</h1>
+      <p>Access online crochet courses for beginners and hobbyists, with step-by-step video guides you can follow at your own pace.</p>
+    
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/jbMKDhgx4eM" 
+          title="How to Crochet for Absolute Beginners"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      
+      <a href="https://youtube.com/playlist?list=PLLpVur4DPg1jlHpxaXYxXMDJK3AUCbwL_&si=2_zXr7jzwyy6sRIx" target="_blank">
+      <button class="video-button">
+        Click here to access our video catalogue
+      </button>
+      </a>
+    </section>
+
+    <!----------- ANIMATION :) --------------->
+
+    <section class="message-animation-container" id="message-tag">
+      <small>Enter message (optional) and click button "Send"</small>
+      <div class="wrapper centered">
+        <article class="letter">
+          <div class="side">
+            <h1>Contact us</h1>
+            <p>
+              <textarea placeholder="Your message"></textarea>
+            </p>
+          </div>
+          <div class="side">
+            <p>
+              <input type="text" placeholder="Your name" >
+            </p>
+            <p>
+              <input type="email" placeholder="Your email" >
+            </p>
+
+
+
+            <p>
+              <button id="sendLetter">Send</button>
+            </p>
+          </div>
+        </article>
+        <div class="envelope front"></div>
+        <div class="envelope back"></div>
+      </div>
+      <p class="result-message centered">Thank you for your message :)</p>
+    </section>
+
+<!------------- FOOTER --------------------->
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Shay's Studio. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/yourprofile" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
